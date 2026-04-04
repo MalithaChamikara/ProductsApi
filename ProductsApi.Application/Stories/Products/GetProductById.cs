@@ -10,7 +10,7 @@ namespace ProductsApi.Application.Stories.Products
     {
         public async Task<ProductDetailDto?> ExecuteAsync(int id)
         {
-            var product = await productRepo.GetIdByAsync(id);
+            var product = await productRepo.GetByIdAsync(id);
             if(product == null) return null;
 
             return new ProductDetailDto(

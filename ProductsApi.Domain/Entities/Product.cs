@@ -16,7 +16,7 @@ namespace ProductsApi.Domain.Entities
 
         public string? ThumbnailUrl { get; set; }
 
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedAt { get; set; }
 
         // Foreign Key
         public int CategoryId {  get; set; }

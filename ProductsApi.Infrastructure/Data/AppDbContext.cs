@@ -69,11 +69,12 @@ namespace ProductsApi.Infrastructure.Data
 
             modelBuilder.Entity<Product>().HasData(
 
-                new Product { Id = 1, Title = "Headphones", Price = 79.99m, CategoryId = 1, ThumbnailUrl = "https://buyabans.com/cdn-cgi/imagedelivery/OgVIyabXh1YHxwM0lBwqgA/product/10342/new_projehjau_uat.png/public", Description = "High quality headphones with noise cancelling." },
-                new Product { Id = 2, Title = "Keyboard", Price = 129.99m, CategoryId = 1, ThumbnailUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhhSQ3LB8lbays7c9rWR4qfpTFWQw_iw7lew&s", Description = "keyboard with blue switches." },
-                new Product { Id = 3, Title = "Shoes", Price = 59.99m, CategoryId = 2, ThumbnailUrl = "https://cdn.shopify.com/s/files/1/2997/9866/files/ff8c627fe9b5511d49db50c11273d5996c6ef23d7a9c4377cd2ce3800f0920e9.jpg?v=1773832197", Description = "Running shoes for all terrains." },
-                new Product { Id = 4, Title = "Cricket Bat", Price = 24.99m, CategoryId = 4, ThumbnailUrl = "https://m.media-amazon.com/images/I/317VTY6RngL._AC_UF1000,1000_QL80_.jpg", Description = "High quality cricket bat with pure travelling" },
-                new Product { Id = 5, Title = "Smart Watch", Price = 199.99m, CategoryId = 1, ThumbnailUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalc59BAZBZhe1bVgnRu45IwAbb-cLO4DVBQ&s", Description = "Fitness tracking smart watch with heart rate monitor." }
+                new Product { Id = 1, Title = "Headphones", Price = 79.99m, CategoryId = 1, ThumbnailUrl = "https://buyabans.com/cdn-cgi/imagedelivery/OgVIyabXh1YHxwM0lBwqgA/product/10342/new_projehjau_uat.png/public", Description = "High quality headphones with noise cancelling.", CreatedAt = new DateTime(2026, 4, 4, 0, 0, 0, DateTimeKind.Utc) },
+                new Product { Id = 2, Title = "Keyboard", Price = 129.99m, CategoryId = 1, ThumbnailUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhhSQ3LB8lbays7c9rWR4qfpTFWQw_iw7lew&s", Description = "keyboard with blue switches.", CreatedAt = new DateTime(2026, 4, 4, 0, 0, 0, DateTimeKind.Utc) },
+                new Product { Id = 3, Title = "Shoes", Price = 59.99m, CategoryId = 2, ThumbnailUrl = "https://cdn.shopify.com/s/files/1/2997/9866/files/ff8c627fe9b5511d49db50c11273d5996c6ef23d7a9c4377cd2ce3800f0920e9.jpg?v=1773832197", Description = "Running shoes for all terrains.", CreatedAt = new DateTime(2026, 4, 4, 0, 0, 0, DateTimeKind.Utc) },
+                new Product { Id = 4, Title = "Cricket Bat", Price = 24.99m, CategoryId = 3, ThumbnailUrl = "https://m.media-amazon.com/images/I/317VTY6RngL._AC_UF1000,1000_QL80_.jpg", Description = "High quality cricket bat with pure travelling", CreatedAt = new DateTime(2024, 4, 4, 0, 0, 0, DateTimeKind.Utc) },
+                new Product { Id = 5, Title = "Smart Watch", Price = 199.99m, CategoryId = 1, ThumbnailUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalc59BAZBZhe1bVgnRu45IwAbb-cLO4DVBQ&s", Description = "Fitness tracking smart watch with heart rate monitor.", CreatedAt = new DateTime(2024, 4, 4, 0, 0, 0, DateTimeKind.Utc) }
+
                 
             );
         }
