@@ -14,7 +14,7 @@ namespace ProductsApi.Api.Controllers
             return Ok(await getAll.ExecuteAsync());
         }
 
-        [HttpGet("{slug:string}/products")]
+        [HttpGet("{slug}/products")]
         public  async Task<IActionResult> GetByCategory(string slug)
         {
             if(string.IsNullOrWhiteSpace(slug))
